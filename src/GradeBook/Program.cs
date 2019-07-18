@@ -10,6 +10,12 @@ namespace GradeBook
 
             var book = new Book();
             book.AddGrade(54);
+            var getGrades = book.GetGrades();
+            foreach (var item in getGrades)
+            {
+                System.Console.WriteLine($"Incoming Grade {item}");
+            }
+
 
             List<double> grades = new List<double>(){12,15.6 };
             grades.Add(12);
