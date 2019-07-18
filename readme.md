@@ -7,3 +7,6 @@ Created Project
 
 ## pass args
 dotnet run Hidayat
+
+## Note 
+var: var is used when u initialize directly
