@@ -23,10 +23,12 @@ namespace GradeBook
             {
                 result2 += item;
             }
+            double average = result2/grades.Count;
             System.Console.WriteLine("\n\n");
             Console.WriteLine(result);
             System.Console.WriteLine("\n\n");
-            Console.WriteLine(result2);
+            Console.WriteLine($"Result: {result2}");
+            Console.WriteLine($"Average: {average:N3}");
         }
     }
 }
