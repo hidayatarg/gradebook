@@ -6,7 +6,7 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
-            var numbers = new double[]{12,15.6};
+            var numbers = new []{12,15.6};
             double result = 0;
             foreach (var item in numbers)
             {
