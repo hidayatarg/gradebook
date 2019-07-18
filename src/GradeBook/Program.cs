@@ -6,11 +6,13 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
-            double x = 3.4;
-            double y = 1.2;
-            var result = x + y;
+            var numbers = new double[]{12,15.6};
+            double result = 0;
+            foreach (var item in numbers)
+            {
+                result += item;
+            }
             Console.WriteLine(result);
-            Console.WriteLine("Hello World!");
         }
     }
 }
