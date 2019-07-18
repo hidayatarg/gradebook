@@ -7,11 +7,10 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
-            var numbers = new []{12,15.6};
-            List<int> grades = new List<int>();
+            var numbers = new []{12,15.6, 12};
+            List<double> grades = new List<double>(){12,15.6 };
             grades.Add(12);
-            grades.Add(11);
-            grades.Add(10);
+           
             double result = 0;
             foreach (var item in numbers)
             {
@@ -19,12 +18,15 @@ namespace GradeBook
             }
 
             // print list 
-            foreach (var item in grades.FindAll(x => x > 11))
+            double result2 = 0;
+            foreach (var item in grades)
             {
-                Console.WriteLine(item);
+                result2 += item;
             }
             System.Console.WriteLine("\n\n");
             Console.WriteLine(result);
+            System.Console.WriteLine("\n\n");
+            Console.WriteLine(result2);
         }
     }
 }
