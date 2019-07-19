@@ -24,9 +24,11 @@ namespace GradeBook
            
             // print list 
             double result = 0;
-            double highGrade = 0;
+            double highGrade = double.MinValue;
+            double lowGrade = double.MinValue;
             foreach (var item in grades)
             {
+                lowGrade = Math.Min(item, highGrade);
                 highGrade = Math.Max(item, highGrade);
                 result += item;
             }
@@ -37,7 +39,8 @@ namespace GradeBook
             var gradeTwelve = grades.Where(x => x > 12);
             Console.WriteLine($"Result: {result}");
             Console.WriteLine($"Average: {average:N3}");
-            Console.WriteLine($"Min: {highGrade:N3}");
+            Console.WriteLine($"Max: {highGrade:N3}");
+            Console.WriteLine($"Min: {lowGrade:N3}");
         }
     }
 }
